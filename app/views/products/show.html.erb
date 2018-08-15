@@ -2,7 +2,7 @@
   <div class="product-wrapper">
     <h1 class="product-name">
       <%= @product.name %>
-      <span class="product-price">($<%= @product.price_in_cents/100 %>)</span>
+      <span class="product-price">(<%= @product.price_in_dollars %>)</span>
     </h1>
 
     <p class="product-description"><%= @product.description %></p>

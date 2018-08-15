@@ -5,10 +5,9 @@
     <ul class="product-wrapper">
       <li class="product-name">
         <%= link_to(pro.name, product_path(pro)) %>
-        <span class="product-price">($<%= pro.price_in_cents/100 %>)</span>
+        <span class="product-price">(<%= pro.price_in_dollars %>)</span>
       </li>
       <li class="product-description"><%= pro.description %></li>
     </ul>
   <% end %>
 </section>
-
