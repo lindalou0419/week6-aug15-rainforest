@@ -2,7 +2,6 @@ main {
   padding: 0 0 400px;
 }
 
-
 .product-wrapper {
   margin: 1.8em auto;
   font-size: 1.4rem;
@@ -22,11 +21,9 @@ main {
 }
 
 .main-page {
-  .product-wrapper {
-    .product-name {
-      a {
-        padding-right: 5px;
-      }
+  .product-name {
+    a {
+      padding-right: 5px;
     }
   }
 }
@@ -61,5 +58,23 @@ main {
       right: 0;
       @extend %clearfix
     }
+  }
+}
+
+.error-block {
+  color: $c-red;
+  background: $c-light-gray;
+  padding: 1em;
+
+  h2 {
+    font-size: 1.6rem;
+    font-family: $f-sans;
+    margin: 0.5em auto;
+    text-transform: uppercase;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin: 0.2em auto;
   }
 }
