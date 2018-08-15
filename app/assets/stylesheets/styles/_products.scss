@@ -2,34 +2,64 @@ main {
   padding: 0 0 400px;
 }
 
+
+.product-wrapper {
+  margin: 1.8em auto;
+  font-size: 1.4rem;
+
+  .product-name {
+    font-size: 1.6rem;
+  }
+
+  .product-description {
+    margin: 0.5rem auto;
+    font-size: 1.2rem;
+  }
+
+  .product-price {
+    font-size: 1.4rem;
+  }
+}
+
 .main-page {
   .product-wrapper {
-    margin: 1.8em auto;
-    font-size: 1.4rem;
-
     .product-name {
-      font-size: 1.6rem;
-
       a {
         padding-right: 5px;
       }
-    }
-
-    .product-description {
-      margin: 0.5rem auto;
-    }
-
-    .product-price {
-      font-size: 1.4rem;
     }
   }
 }
 
 .product-page {
-  h1 {
-    span {
-      font-family: $f-sans;
-      color: $c-dark-orange;
+  .product-price {
+    font-family: $f-sans;
+    color: $c-dark-orange;
+  }
+}
+
+.form-page {
+  .field-wrapper {
+    width: 360px;
+    margin: 2em 0;
+    position: relative;
+
+    label {
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    input[type=text], input[type=number] {
+      width: 360px;
+      height: 30px;
+    }
+
+    .btn-default {
+      position: absolute;
+      right: 0;
+      @extend %clearfix
     }
   }
 }
