@@ -1,0 +1,53 @@
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: $f-sans;
+  font-weight: 400;
+  color: $c-main;
+}
+
+h1, h2, h3, h4 {
+  font-family: $f-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin: 1em auto;
+  padding-bottom: 0.5rem;
+  height: auto;
+  position: relative;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 3px solid $c-light-orange;
+  }
+}
+
+header, main, footer {
+  font-size: 1.6em;
+  margin: 1em auto;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: $c-orange;
+}
+
+a:hover, a:active, a:focus {
+  color: $c-light-orange;
+}
