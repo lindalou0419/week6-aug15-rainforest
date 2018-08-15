@@ -2,6 +2,29 @@ main {
   padding: 0 0 400px;
 }
 
+.main-page {
+  .product-wrapper {
+    margin: 1.8em auto;
+    font-size: 1.4rem;
+
+    .product-name {
+      font-size: 1.6rem;
+
+      a {
+        padding-right: 5px;
+      }
+    }
+
+    .product-description {
+      margin: 0.5rem auto;
+    }
+
+    .product-price {
+      font-size: 1.4rem;
+    }
+  }
+}
+
 .product-page {
   h1 {
     span {

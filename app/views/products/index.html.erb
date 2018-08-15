@@ -3,9 +3,12 @@
 
   <% @products.each do |pro| %>
     <ul class="product-wrapper">
-      <li><%= link_to(pro.name, product_path(pro)) %></li>
-      <li><%= pro.description %></li>
-      <li><%= pro.price_in_cents %></li>
+      <li class="product-name">
+        <%= link_to(pro.name, product_path(pro)) %>
+        <span class="product-price">($<%= pro.price_in_cents/100 %>)</span>
+      </li>
+      <li class="product-description"><%= pro.description %></li>
     </ul>
   <% end %>
 </section>
+

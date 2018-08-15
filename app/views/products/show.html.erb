@@ -1,4 +1,8 @@
 <section class="product-page">
-  <h1><%= @product.name %> | <span>$<%= @product.price_in_cents/100 %></span></h1>
+  <h1>
+    <%= @product.name %>
+    <span>($<%= @product.price_in_cents/100 %>)</span>
+  </h1>
+  
   <p><%= @product.description %></p>
 </section>
