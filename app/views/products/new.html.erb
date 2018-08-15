@@ -1,37 +1,4 @@
 <section class="form-page">
   <h1>Create A New Product</h1>
-
-
-<% if @product.errors.any? %>
-  <div id="error_explanation" class="error-block">
-    <h2>There are <%= pluralize(@product.errors.count, "error") %>:</h2>
-
-    <ul>
-      <% @product.errors.full_messages.each do |msg| %>
-        <li>* <%= msg %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
-
-  <%= form_for @product do |f| %>
-   <section class="field-wrapper">
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-    </section>
-
-   <section class="field-wrapper">
-      <%= f.label :description %>
-      <%= f.text_field :description %>
-    </section>
-
-    <section class="field-wrapper">
-      <%= f.label :price_in_cents %>
-      <%= f.number_field :price_in_cents %>
-    </section>
-
-    <section class="field-wrapper">
-      <%= f.submit "Submit", class: 'btn-default' %>
-    </section>
-  <% end %>
+  <%= render 'form', product: @product %>
 </section>
