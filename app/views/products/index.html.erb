@@ -1,1 +1,10 @@
-<h1>index</h1>
+<%= link_to("new products", new_product_path)%>
+<h1>List of all products</h1>
+
+<% @products.each do |pro| %>
+  <ul>
+    <li> <%=pro.name%></li>
+    <li> <%=pro.description%></li>
+    <li> <%=pro.price_in_cents%></li>
+  </ul>
+<%end%>
