@@ -1,1 +1,6 @@
-<h1>edit</h1>
+<%= link_to("Back to Product", product_path(@product)) %>
+
+<section class="form-page">
+  <h1>Edit A Product</h1>
+  <%= render 'form', product: @product %>
+</section>

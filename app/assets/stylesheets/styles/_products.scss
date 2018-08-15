@@ -33,6 +33,11 @@ main {
     font-family: $f-sans;
     color: $c-dark-orange;
   }
+
+  .btn-default {
+    margin: 1em auto;
+    color: $c-white;
+  }
 }
 
 .form-page {
