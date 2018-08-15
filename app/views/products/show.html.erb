@@ -1,1 +1,6 @@
-<h1>show</h1>
+<%= link_to('Main page', products_path) %>
+
+<section class="product-wrapper">
+  <h1><%= @product.name %> | $<%= @product.price_in_cents/100 %></h1>
+  <p><%= @product.description %></p>
+</section>
