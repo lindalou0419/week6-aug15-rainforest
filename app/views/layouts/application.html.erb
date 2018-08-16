@@ -26,7 +26,8 @@
       <%
         # bad code but just to check it works for now
         def current_user
-          User.find(session[:user_id]).email
+          user_id = session[:user_id]
+          user_id && User.find(session[:user_id]).email
         end
       %>
 
