@@ -23,14 +23,6 @@
     </header>
 
     <main>
-      <%
-        # bad code but just to check it works for now
-        def current_user
-          user_id = session[:user_id]
-          user_id && User.find(session[:user_id]).email
-        end
-      %>
-
       <h1>Welcome</h1>
       <% if current_user %>
         Hello <%= current_user %>! <br>
