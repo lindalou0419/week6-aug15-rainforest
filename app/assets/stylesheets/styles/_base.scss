@@ -127,3 +127,9 @@ a:hover, a:active, a:focus {
     margin: 0.2em auto;
   }
 }
+
+.field_with_errors {
+  input {
+    border: 1px solid $c-red;
+  }
+}

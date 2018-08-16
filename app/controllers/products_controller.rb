@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
 
     if @product.save
       flash[:notice] = "You have successfully created."
-      redirect_to root_path
+      redirect_to root_url
     else
       render :new
     end
@@ -48,6 +48,6 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @product.destroy
     flash[:alert] = "You have successfully deleted."
-    redirect_to root_path
+    redirect_to root_url
   end
 end
