@@ -16,15 +16,17 @@
 
     <ul>
       <% @product.reviews.each do |review| %>
-        <li>
+        <li class="review-user">
           Anonymous posted on <%= review.created_at %>
           (<%= link_to('Edit', edit_product_review_url(@product.id, review.id)) %>)
         </li>
-        <li> <%= review.comment %></li>
+        <li class="review-comment"><%= review.comment %></li>
       <% end %>
     </ul>
   </div>
 
-  <h4>New Review</h4>
-  <%= render 'reviews/form' %>
+  <section class="product-review-form">
+    <h4>New Review</h4>
+    <%= render 'reviews/form' %>
+  </section>
 </section>

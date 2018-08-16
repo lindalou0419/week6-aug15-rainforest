@@ -1,0 +1,66 @@
+.product-reviews {
+  h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    margin: 0 auto 0.5rem;
+  }
+
+  .review-user {
+    color: $c-gray;
+    padding: 0.3em 0;
+    font-size: 1.3rem;
+  }
+
+  .review-comment {
+    padding: 0 0 1em;
+    font-size: 1.2rem;
+  }
+}
+
+.product-review-form, .edit-review-form {
+  margin: 2em auto;
+
+  h4 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+
+  .field {
+    margin: 1em auto 0;
+
+    label {
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+
+    textarea {
+      width: 360px;
+      height: 150px;
+    }
+  }
+
+  .actions {
+    position: relative;
+    width: 360px;
+
+    .btn-default {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.edit-review-form {
+  h4, a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+}

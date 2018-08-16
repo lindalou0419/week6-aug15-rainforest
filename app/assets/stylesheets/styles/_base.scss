@@ -83,3 +83,47 @@ a:hover, a:active, a:focus {
 .btn-default:active {
   transform: scale(0.99);
 }
+
+.form-page {
+  .field-wrapper {
+    width: 360px;
+    margin: 2em 0;
+    position: relative;
+
+    label {
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    input[type=text], input[type=number] {
+      width: 360px;
+      height: 30px;
+    }
+
+    .btn-default {
+      position: absolute;
+      right: 0;
+      @extend %clearfix
+    }
+  }
+}
+
+.error-block {
+  color: $c-red;
+  background: $c-light-gray;
+  padding: 1em;
+
+  h2 {
+    font-size: 1.6rem;
+    font-family: $f-sans;
+    margin: 0.5em auto;
+    text-transform: uppercase;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin: 0.2em auto;
+  }
+}

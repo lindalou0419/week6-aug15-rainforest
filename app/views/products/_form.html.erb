@@ -1,4 +1,16 @@
 <%= form_for product do |f| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation" class="error-block">
+      <h2>There are <%= pluralize(product.errors.count, "error") %>:</h2>
+
+      <ul>
+        <% product.errors.full_messages.each do |msg| %>
+          <li>* <%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
  <section class="field-wrapper">
     <%= f.label :name %>
     <%= f.text_field :name %>
