@@ -17,6 +17,13 @@ class SessionsController < ApplicationController
     end
   end
 
-  def destory
+  def destroy
+    # cut the wristband
+    session[:user_id] = nil
+
+    # optional flash
+
+    # redirect to home page
+    redirect_to root_url
   end
 end

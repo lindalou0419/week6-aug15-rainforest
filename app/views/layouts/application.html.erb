@@ -24,14 +24,16 @@
 
     <main>
       <%
-        def user_is_logged_in
-          session[:user_id]
+        # bad code but just to check it works for now
+        def current_user
+          User.find(session[:user_id]).email
         end
       %>
 
       <h1>Welcome</h1>
-      <% if user_is_logged_in %>
-        <%= link_to 'Log Out', root_path %>
+      <% if current_user %>
+        Hello <%= current_user %>! <br>
+        <%= link_to 'Log Out', sessions_path, method: :delete %>
       <% else %>
         <p><%= link_to 'Sign Up', new_users_path %></p>
         <p><%= link_to 'Log In', new_sessions_path %></p>
